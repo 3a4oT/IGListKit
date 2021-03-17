@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A40FA762601FE9A0087C81C /* IGListTransitionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B22E662502AAB10055DC2F /* IGListTransitionData.m */; };
+		0A40FA822601FEA80087C81C /* IGListTransitionData.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E692502AAB10055DC2F /* IGListTransitionData.h */; };
+		0A40FA8E2601FEBF0087C81C /* IGListUpdateTransactionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E7D2502AAC40055DC2F /* IGListUpdateTransactionBuilder.h */; };
+		0A40FA9A2601FEC70087C81C /* IGListUpdateTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B22E722502AAC30055DC2F /* IGListUpdateTransactionBuilder.m */; };
+		0A40FAB12601FF330087C81C /* IGListDataSourceChangeTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E742502AAC30055DC2F /* IGListDataSourceChangeTransaction.h */; };
+		0A40FABD2601FF3D0087C81C /* IGListDataSourceChangeTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B22E792502AAC30055DC2F /* IGListDataSourceChangeTransaction.m */; };
+		0A40FAC92601FF550087C81C /* IGListReloadTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B22E7E2502AAC40055DC2F /* IGListReloadTransaction.m */; };
+		0A40FAD52601FF5D0087C81C /* IGListReloadTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E762502AAC30055DC2F /* IGListReloadTransaction.h */; };
+		0A40FAE12601FF7A0087C81C /* IGListBatchUpdateTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E7B2502AAC40055DC2F /* IGListBatchUpdateTransaction.h */; };
+		0A40FAED2601FF810087C81C /* IGListBatchUpdateTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B22E712502AAC20055DC2F /* IGListBatchUpdateTransaction.m */; };
+		0A40FAF92601FF960087C81C /* IGListItemUpdatesCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B22E752502AAC30055DC2F /* IGListItemUpdatesCollector.m */; };
+		0A40FB052601FF9E0087C81C /* IGListItemUpdatesCollector.m in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E752502AAC30055DC2F /* IGListItemUpdatesCollector.m */; };
+		0A40FB322602030F0087C81C /* IGListAdapterUpdaterCompatible.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E682502AAB10055DC2F /* IGListAdapterUpdaterCompatible.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B3B93611E08E38C008390ED /* IGListBatchUpdateDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88144EE51D870EDC007C7F66 /* IGListBatchUpdateDataTests.m */; };
 		0B40C5F31E01CB8200378109 /* IGReloadDataUpdaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2997D4961DF5FC0B005A5DD2 /* IGReloadDataUpdaterTests.m */; };
 		13DF01731FA0FD400092A320 /* IGListTestAdapterReorderingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF01721FA0FD400092A320 /* IGListTestAdapterReorderingDataSource.m */; };
@@ -67,7 +80,7 @@
 		401B5E64230111F3004099D5 /* IGTestNibSupplementaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2904861C1DCD02140007F41D /* IGTestNibSupplementaryView.xib */; };
 		401B5E65230111F7004099D5 /* IGTestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821BC4C21DB8CAE900172ED0 /* IGTestStoryboard.storyboard */; };
 		57B22E6C2502AAB20055DC2F /* IGListTransitionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B22E662502AAB10055DC2F /* IGListTransitionData.m */; };
-		57B22E6E2502AAB20055DC2F /* IGListAdapterUpdaterCompatible.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E682502AAB10055DC2F /* IGListAdapterUpdaterCompatible.h */; };
+		57B22E6E2502AAB20055DC2F /* IGListAdapterUpdaterCompatible.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E682502AAB10055DC2F /* IGListAdapterUpdaterCompatible.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57B22E6F2502AAB20055DC2F /* IGListTransitionData.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E692502AAB10055DC2F /* IGListTransitionData.h */; };
 		57B22E7F2502AAC40055DC2F /* IGListBatchUpdateTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B22E712502AAC20055DC2F /* IGListBatchUpdateTransaction.m */; };
 		57B22E802502AAC40055DC2F /* IGListUpdateTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B22E722502AAC30055DC2F /* IGListUpdateTransactionBuilder.m */; };
@@ -1265,6 +1278,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A40FB322602030F0087C81C /* IGListAdapterUpdaterCompatible.h in Headers */,
 				7A02CF102361511100B49FAE /* IGListAdapterDelegate.h in Headers */,
 				7A02CFB52361513600B49FAE /* IGListAdapterUpdaterInternal.h in Headers */,
 				7A02CF222361511100B49FAE /* IGListTransitionDelegate.h in Headers */,
@@ -1295,14 +1309,19 @@
 				7A02CF4C2361511100B49FAE /* IGListSupplementaryViewSource.h in Headers */,
 				7A02CFA92361513600B49FAE /* UICollectionViewLayout+InteractiveReordering.h in Headers */,
 				7A02CF462361511100B49FAE /* IGListAdapterPerformanceDelegate.h in Headers */,
+				0A40FAB12601FF330087C81C /* IGListDataSourceChangeTransaction.h in Headers */,
 				7A02CF0A2361511100B49FAE /* IGListBindingSectionControllerDataSource.h in Headers */,
+				0A40FA8E2601FEBF0087C81C /* IGListUpdateTransactionBuilder.h in Headers */,
+				0A40FB052601FF9E0087C81C /* IGListItemUpdatesCollector.m in Headers */,
 				7A02D0122361513600B49FAE /* UICollectionView+DebugDescription.h in Headers */,
 				7A92EAB423A8A5FA00E5A13D /* IGListAdapterUpdaterHelpers.h in Headers */,
 				7A02CF0D2361511100B49FAE /* IGListCollectionContext.h in Headers */,
+				0A40FA822601FEA80087C81C /* IGListTransitionData.h in Headers */,
 				7A02CF372361511100B49FAE /* IGListAdapterDataSource.h in Headers */,
 				7A02CFC12361513600B49FAE /* IGListAdapter+UICollectionView.h in Headers */,
 				7A02CFDC2361513600B49FAE /* IGListAdapterProxy.h in Headers */,
 				7A02CFCD2361513600B49FAE /* IGListBatchUpdateState.h in Headers */,
+				0A40FAD52601FF5D0087C81C /* IGListReloadTransaction.h in Headers */,
 				7A02CEF22361511100B49FAE /* IGListScrollDelegate.h in Headers */,
 				7A02CF9A2361513600B49FAE /* IGListBindingSectionController+DebugDescription.h in Headers */,
 				7A02CF9D2361513600B49FAE /* IGListCollectionViewLayoutInternal.h in Headers */,
@@ -1311,6 +1330,7 @@
 				7A02CFEE2361513600B49FAE /* IGListDebuggingUtilities.h in Headers */,
 				7A02D0032361513600B49FAE /* IGListSectionControllerInternal.h in Headers */,
 				7A02CF162361511100B49FAE /* IGListCollectionViewLayout.h in Headers */,
+				0A40FAE12601FF7A0087C81C /* IGListBatchUpdateTransaction.h in Headers */,
 				7A02CF072361511100B49FAE /* IGListBatchContext.h in Headers */,
 				7A02CF312361511100B49FAE /* IGListUpdatingDelegate.h in Headers */,
 				7A02CFE82361513600B49FAE /* IGListArrayUtilsInternal.h in Headers */,
@@ -1328,6 +1348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A02CEEE2361511100B49FAE /* IGListReloadDataUpdater.h in Headers */,
+				57B22E6E2502AAB20055DC2F /* IGListAdapterUpdaterCompatible.h in Headers */,
 				7A02CF212361511100B49FAE /* IGListTransitionDelegate.h in Headers */,
 				7A02CF362361511100B49FAE /* IGListAdapterDataSource.h in Headers */,
 				7A02CF962361513600B49FAE /* IGListAdapterInternal.h in Headers */,
@@ -1358,13 +1379,13 @@
 				7A02CFA22361513600B49FAE /* UIScrollView+IGListKit.h in Headers */,
 				7A02CF5A2361511100B49FAE /* IGListAdapterUpdater.h in Headers */,
 				7A02CFA82361513600B49FAE /* UICollectionViewLayout+InteractiveReordering.h in Headers */,
+				57B22E822502AAC40055DC2F /* IGListDataSourceChangeTransaction.h in Headers */,
 				7A02CFD22361513600B49FAE /* IGListBatchUpdates.h in Headers */,
 				7A02CF452361511100B49FAE /* IGListAdapterPerformanceDelegate.h in Headers */,
 				7A02D0022361513600B49FAE /* IGListSectionControllerInternal.h in Headers */,
 				7A02CFC92361513600B49FAE /* UICollectionView+IGListBatchUpdateData.h in Headers */,
 				7A02CEF12361511100B49FAE /* IGListScrollDelegate.h in Headers */,
 				7A02CFF62361513600B49FAE /* IGListSectionMap+DebugDescription.h in Headers */,
-				57B22E6E2502AAB20055DC2F /* IGListAdapterUpdaterCompatible.h in Headers */,
 				7AD6864C23A89E7F009000DE /* IGListAdapterUpdaterHelpers.h in Headers */,
 				7A02CF002361511100B49FAE /* IGListCollectionView.h in Headers */,
 				7A02CF152361511100B49FAE /* IGListCollectionViewLayout.h in Headers */,
@@ -1382,7 +1403,6 @@
 				7A02D0082361513600B49FAE /* IGListBatchUpdateData+DebugDescription.h in Headers */,
 				7A02CF542361511100B49FAE /* IGListBindingSectionControllerSelectionDelegate.h in Headers */,
 				7A02CFCC2361513600B49FAE /* IGListBatchUpdateState.h in Headers */,
-				57B22E822502AAC40055DC2F /* IGListDataSourceChangeTransaction.h in Headers */,
 				7A02CF302361511100B49FAE /* IGListUpdatingDelegate.h in Headers */,
 				7A02CEF42361511100B49FAE /* IGListWorkingRangeDelegate.h in Headers */,
 				7A02CF092361511100B49FAE /* IGListBindingSectionControllerDataSource.h in Headers */,
@@ -1882,8 +1902,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A40FAC92601FF550087C81C /* IGListReloadTransaction.m in Sources */,
+				0A40FABD2601FF3D0087C81C /* IGListDataSourceChangeTransaction.m in Sources */,
+				0A40FAF92601FF960087C81C /* IGListItemUpdatesCollector.m in Sources */,
+				0A40FAED2601FF810087C81C /* IGListBatchUpdateTransaction.m in Sources */,
+				0A40FA762601FE9A0087C81C /* IGListTransitionData.m in Sources */,
 				7A02CF492361511100B49FAE /* IGListSingleSectionController.m in Sources */,
 				7A02CFEB2361513600B49FAE /* IGListBatchUpdates.m in Sources */,
+				0A40FA9A2601FEC70087C81C /* IGListUpdateTransactionBuilder.m in Sources */,
 				7A02CF132361511100B49FAE /* IGListGenericSectionController.m in Sources */,
 				7A02CFA62361513600B49FAE /* UICollectionView+IGListBatchUpdateData.m in Sources */,
 				7A02CFC42361513600B49FAE /* UICollectionView+DebugDescription.m in Sources */,
